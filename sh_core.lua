@@ -1,5 +1,6 @@
 local developer = {
-    ["STEAM_1:0:463932287"] = true, -- pack
+    ["STEAM_1:0:463932287"] = true,
+    ["STEAM-ID"] = true,
 }
 
 function IsDeveloper(ply)
@@ -12,7 +13,6 @@ end
 local admins = {
     ["founder"] = true,
     ["admin"] = true,
-    -------ДОБАВЬТЕ СВОИХ
 }
 
 function IsStaff(ply)
