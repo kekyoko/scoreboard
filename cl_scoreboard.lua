@@ -23,7 +23,6 @@ local newlogosup2 = getMaterial("luna_sup_brand/logoryloth2")
 
 AdminIcons = {}
 AdminIcons["superadmin"] = "groups/group_sup"
--- AdminIcons["developer"] = "groups/group_developer"
 AdminIcons["serverstaff"] = "groups/group_user"
 AdminIcons["hadmin"] = "groups/group_hadmin"
 AdminIcons["curator"] = "groups/group_curator"
