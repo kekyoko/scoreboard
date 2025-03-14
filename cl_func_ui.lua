@@ -1,69 +1,3 @@
--- function create_fonts()
---     for s = 1, 150 do
---         surface.CreateFont("SUP." .. s, {
---             font = "Mont",
---             size = ResponsiveX(s),
---             weight = 100,
---             extended = true,
---         })
---         surface.CreateFont("SUP.Mont." .. s, {
---             font = "Mont",
---             size = ResponsiveX(s),
---             weight = 1000,
---             extended = true,
---         })
---         surface.CreateFont("SUP.Mont.Black." .. s, {
---             font = "Mont Black",
---             size = ResponsiveX(s),
---             weight = 100,
---             extended = true,
---         })
---         surface.CreateFont("SUP.Mont.Black.Italic." .. s, {
---             font = "Mont Black Italic",
---             size = ResponsiveX(s),
---             weight = 100,
---             extended = true,
---         })
---         surface.CreateFont("SUP.Mont.Bold." .. s, {
---             font = "Mont Bold",
---             size = ResponsiveX(s),
---             weight = 100,
---             extended = true,
---         })
---         surface.CreateFont("SUP.Mont.ExtraLight." .. s, {
---             font = "Mont ExtraLight",
---             size = ResponsiveX(s),
---             weight = 100,
---             extended = true,
---         })
---         surface.CreateFont("SUP.Mont.Heavy." .. s, {
---             font = "Mont Heavy",
---             size = ResponsiveX(s),
---             weight = 100,
---             extended = true,
---         })
---         surface.CreateFont("SUP.Mont.Light." .. s, {
---             font = "Mont Light",
---             size = ResponsiveX(s),
---             weight = 100,
---             extended = true,
---         })
---         surface.CreateFont("SUP.Mont.SemiBold." .. s, {
---             font = "Mont SemiBold",
---             size = ResponsiveX(s),
---             weight = 100,
---             extended = true,
---         })
---         surface.CreateFont("SUP.Mont.Thin." .. s, {
---             font = "Mont Thin",
---             size = ResponsiveX(s),
---             weight = 100,
---             extended = true,
---         })
---     end
--- end
--- create_fonts()
-
 local PANEL = {}
 function PANEL:Paint(w, h) end
 function PANEL:AddSubMenu()
@@ -73,7 +7,7 @@ function PANEL:AddSubMenu()
 	self:SetSubMenu(SubMenu)
 	return SubMenu
 end
-derma.DefineControl("UPMenuOption", "Опции", PANEL, "DMenuOption")
+derma.DefineControl("UPMenuOption", "Настройки", PANEL, "DMenuOption")
 
 local PANEL = {}
 function PANEL:Paint(w, h)
